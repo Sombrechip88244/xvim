@@ -4,5 +4,5 @@
 <h3>Mac</h3>
 
 ```
-git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim
+git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
 ```
