@@ -6,3 +6,4 @@
 ```
 git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
 ```
+
