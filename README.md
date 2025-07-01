@@ -2,7 +2,7 @@
 
 # XVIM
 
-[Install](#install) • [Documentation] • [FAQ] • [Screenshots] • [Contribute](#contribute)
+[Install](#install) • [Screenshots]
 
 <img width="949" alt="Screenshot 2025-07-01 at 18 58 34" src="https://github.com/user-attachments/assets/2d23f486-5c72-4348-a21f-ec3a3a40e9a6" />
 
@@ -61,8 +61,7 @@ Its design is guided by these mantras:
 git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
 ```
 
-<<<<<<< HEAD
-=======
+
 Then [read our Getting Started guide][getting-started] to be walked through
 installing, configuring and maintaining Doom Emacs.
 
@@ -75,23 +74,5 @@ mysterious errors. When you do, Just drop an issue and i will try to reply soon
 
 
 
-[contribute]: docs/contributing.org
-[discord]: https://doomemacs.org/discord
-[discourse]: https://discourse.doomemacs.org
-[discourse-faq]: https://discourse.doomemacs.org/tag/faq
-[documentation]: docs/index.org
-[faq]: https://github.com/hlissner/doom-emacs/blob/master/docs/faq.org
-[getting-started]: docs/getting_started.org
-[install]: docs/getting_started.org#install
-[backtrace]: docs/getting_started.org#how-to-extract-a-backtrace-from-an-error
-[configuration]: docs/getting_started.org#configuring-doom
-[package-management]: docs/getting_started.org#package-management
-[bin/doom]: docs/getting_started.org#the-bindoom-utility
-[common-mistakes]: docs/getting_started.org#common-mistakes-when-configuring-doom-emacs
-[change-theme]: docs/faq.org#how-do-i-change-the-theme
-[change-font]: docs/faq.org#how-do-i-change-the-fonts
-[modules]: docs/modules.org
-[popup-system]: modules/ui/popup/README.org
-[Screenshots]: /img/
 
->>>>>>> 542a6ce083dc9d9704ace263155bd9ba378de8cd
+[Screenshots]: /img/
