@@ -16,9 +16,6 @@
 - [Features](#features)
 - [Prerequisites](#prerequisites)
 - [Install](#install)
-- [Roadmap](#roadmap)
-- [Getting help](#getting-help)
-- [Contribute](#contribute)
 
 
 # Introduction
@@ -39,13 +36,8 @@ Its design is guided by these mantras:
 - Minimalistic good looks inspired by modern editors.
 - A declarative [package management system] (powered by
   lazy.nvim)
-- LSP integration for many languages
-- Support for *many* programming languages. Includes syntax highlighting,
-  linters/checker integration, inline code evaluation, code completion (where
-  possible), REPLs, documentation lookups, snippets, and more!
-- Project-management tools and framework-specific minor modes with their own
-  snippets libraries.
-- File search utilities, powered by telescope
+- Turns Neovim into a full fledged IDE
+- Easily add more plugins using Lazy.nvim
 
 # Prerequisites
 - Git 2.23+
