@@ -1307,6 +1307,34 @@ vim
   -- format on save
   .vim
   .cmd 'au BufWritePre * lua vim.lsp.buf.format()'
+--
+
+-- Custom helpsheet command
+-- Lua function to display custom help
+function _G.MyCustomHelp()
+  local help_file_path = vim.fn.expand '<sfile>:p:h' .. '/doc/starter-guide.txt'
+  if vim.fn.filereadable(help_file_path) == 1 then
+    vim.cmd 'help starter-guide.txt'
+  else
+    vim.notify("Error: Custom help file 'starter-guide.txt' not found!", vim.log.levels.ERROR)
+  end
+end
+-- custom command
+--
+vim.api.nvim_create_user_command('Myhelp', function()
+  _G.MyCustomHelp()
+end, {
+  -- Optional: Add completion if your help file has specific sections
+  -- For example:
+  -- complete = 'customlist,MyCustomHelpComplete'
+})
+-- Generate helptags for your custom help files
+vim.api.nvim_create_autocmd('VimEnter', {
+  group = vim.api.nvim_create_augroup('CustomHelpTags', { clear = true }),
+  callback = function()
+    vim.cmd 'silent! helptags ALL'
+  end,
+})
 
 --
 -- The line beneath this is called `modeline`. See `:help modeline`

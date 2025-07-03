@@ -1,0 +1,22 @@
+*your_custom_help.txt* Custom Help Guide
+
+This is a custom help guide for my Neovim setup.
+
+==============================================================================
+1. Introduction *my_intro*
+
+This section introduces the custom help guide.
+
+==============================================================================
+2. My Custom Commands *my_commands*
+
+Here are some of my custom commands:
+    - `:MyCommand1`
+    - `:MyCommand2`
+
+For more information, see |:help some-other-vim-help-topic|.
+
+==============================================================================
+3. Configuration *my_config*
+
+Details about configuring my custom setup.
