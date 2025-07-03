@@ -2,9 +2,8 @@
 
 # XVIM
 
-[Install](#install) • [Screenshots]
+<img width="949" alt="Screenshot 2025-07-03 at 18 38 47" src="https://github.com/user-attachments/assets/2af822e6-3977-43af-a5be-618e00a6c405" />
 
-<img width="949" alt="Screenshot 2025-07-01 at 18 58 34" src="https://github.com/user-attachments/assets/2d23f486-5c72-4348-a21f-ec3a3a40e9a6" />
 
 
 </div>
@@ -30,7 +29,7 @@ Its design is guided by these mantras:
 
 + **Gotta go fast.** Startup and run-time performance are priorities. Xvim opens faster and (Lazier)
 + **Close to metal.** Everything is easily customisable (Nothing tied to xvim)
-
++ **Everything you need** Comes with: Git ui, built in terminal, File browser and all the lsp you would like.
 
 # Features
 - Minimalistic good looks inspired by modern editors.
@@ -38,7 +37,8 @@ Its design is guided by these mantras:
   lazy.nvim)
 - Turns Neovim into a full fledged IDE
 - Easily add more plugins using Lazy.nvim
-
+- Built in terminal
+- built in git ui (Lazygit)
 # Prerequisites
 - Git 2.23+
 - NVIM 0.11.2+ - Built with LuaJit
@@ -54,7 +54,7 @@ git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
 ```
 
 
-Then [read our Getting Started guide][getting-started] to be walked through
+Then read our Getting Started guide to be walked through
 installing, configuring and maintaining Doom Emacs.
 
   
@@ -64,7 +64,3 @@ Nvim is no journey of a mere thousand miles. You _will_ run into problems and
 mysterious errors. When you do, Just drop an issue and i will try to reply soon
 
 
-
-
-
-[Screenshots]: /img/
