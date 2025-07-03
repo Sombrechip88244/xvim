@@ -1014,7 +1014,7 @@ require('lazy').setup({
 
 -- Set theme gruvbox
 vim.o.background = 'dark' -- or "light" for light mode
-vim.cmd [[colorscheme gruvbox]]
+vim.cmd [[colorscheme kanagawa-wave]]
 --
 -- Eviline config for lualine
 -- Author: shadmansaleh
@@ -1242,8 +1242,72 @@ lualine.setup(config)
 -- Example keymap using <leader>e
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true, desc = 'Toggle NvimTree' })
 
--- Lazygit keymap
--- setup mapping to call :LazyGit
+--
+-- init.lua
+local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system {
+    'git',
+    'clone',
+    '--filter=blob:none',
+    'https://github.com/folke/lazy.nvim.git',
+    '--branch=stable', -- latest stable release
+    lazypath,
+  }
+end
+vim.opt.runtimepath:prepend(lazypath)
 
+require('lazy').setup {
+  'ThemerCorp/themer.lua', -- This line is not needed if you have it in a separate file.
+  -- other plugins
+  { import = 'plugins' }, -- Assuming you have a plugins directory and files there.
+  { import = 'plugins.themery' }, -- This line loads the themery config.
+}
+
+--
+
+vim.optopt.encoding = 'utf-8'
+vimvim.scriptencoding = 'utf-8'
+-- vim.opt.ambiwidth= 'double'
+
+vim.opt.opt.cursorline = true
+vim.optopt.timeoutlen = 300
+optvim.opt.updatetime = 300
+vim.optopt.signcolumn = 'yes'
+vim.optopt.splitbelow = true
+vim.optopt.mouse = 'a'
+vim.optopt.swapfile = false
+vim.optopt.backup = false
+vim.optopt.undodir = vim.fn .. getenv 'HOME' .. '/.vimdid'
+vim.optopt.scrolloff = 999
+vim.optopt.ignorecase = true
+vim.optopt.smartcase = true
+vim.optopt.gdefault = true
+vim.optopt.incsearch = true
+vim.optopt.termguicolors = true
+
+vim.oo.foldenable = true
+vim.o.o.foldmethod = 'expr'
+vim.o.o.foldlevel = 1000
+vim.oo.foldexpr = 'nvim_treesitter#foldexpr()'
+
+if vim.fnfn.hashas 'macunix' then
+  vim.optopt.clipboard:append { 'unnamedplus' }
+end
+
+-- au TextYankPost * silent! lua vim.highlight.on_yank()
+vim.cmdcmd 'au TextYankPost * silent! lua.highlight.on_yank()'
+
+-- no line numbers when using the teminal
+vim.cmd 'au TermOpen * setlocal nonumber norelative number'
+
+-- neomutt text-flowed option
+vim
+  .cmd('au BufNewFile,BufRead neomutt-* setf mail')
+  -- format on save
+  .vim
+  .cmd 'au BufWritePre * lua vim.lsp.buf.format()'
+
+--
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
