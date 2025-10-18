@@ -1,45 +1,25 @@
 return {
+  -- plugin repo identifier is required by the plugin manager
+  'nvim-treesitter/nvim-treesitter',
   build = function()
-    require('nvim-treesitter.)install').update { with_sync = true }
+    require('nvim-treesitter.install').update { with_sync = true }
   end,
   config = function()
-    require('nvim-treesitter.)configs').supup {
+    require('nvim-treesitter.configs').setup {
       ensure_installed = {
-        'c',
         'c',
         'python',
         'lua',
-        'rua',
-        'ru',
-        'ru',
-        'build',
+        'rust',
         'vim',
-        'vimdoc',
-        'vimdoc',
         'toml',
         'bash',
-        'bibtex',
-        'bibtex',
         'css',
-        'diff',
-        'diff',
-        'gitignore',
         'html',
-        'jq',
-        'jq',
         'json',
-        'json',
-        'latex',
-        'lua',
-        'lua',
         'markdown',
-        'swift',
-        'typescript',
         'typescript',
         'tsx',
-        'tsx',
-        'elixx',
-        'elixir',
       },
       sync_install = false,
       auto_install = false,

@@ -22,12 +22,13 @@ return {
 
     dashboard.section.buttons.val = {
       dashboard.button('SPC .', '  > File Browser', ':cd ~/ | Telescope file_browser<CR>'),
-      dashboard.button('SPC f f', '  > Find file', ':cd ~/ | Telescope git_files<CR>'),
+      dashboard.button('SPC f f', '󰍉  > Find file', ':cd ~/ | Telescope git_files<CR>'),
       dashboard.button('SPC a', '  > Terminal', "<cmd>lua require('FTerm').toggle()<CR>"),
       dashboard.button('SPC v', '  > Git', '<cmd>lua require("FTerm").scratch({cmd="lazygit"})<CR>'),
       dashboard.button('SPC l', '󰒲  > Lazy (Package Manager)', '<cmd>Lazy<CR>'),
       dashboard.button('SPC h', '󰋖  > Help', '<cmd>Telescope help_tags<cr>'),
-      dashboard.button('q', '  > Quit NVIM', ':qa<CR>'),
+      dashboard.button('q', '󰼭  > Typr (Typing Practise)', ':Typr<CR>'),
+      dashboard.button('q', '  > Quit NVIM', ':qa<CR>'),
     }
 
     require('alpha').setup(dashboard.opts)

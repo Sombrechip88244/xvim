@@ -342,12 +342,23 @@ require('lazy').setup({
         },
       },
 
-      -- Document existing key chains
-      spec = {
-        { '<leader>s', group = '[S]earch' },
-        { '<leader>t', group = '[T]oggle' },
-        { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
-      },
+    -- Document existing key chains
+    spec = {
+  { '<leader>s', group = '[S]earch' },
+  { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
+  -- Flat which-key spec entries suggested by :checkhealth which-key
+  { "<leader>f", group = "Find" },
+  { "<leader>f.", "<cmd>Telescope file_browser<cr>", desc = "File Browser" },
+
+  { "<leader>t", group = "Terminal" },
+  { "<leader>tg", "<cmd>OpenLazyGit<cr>", desc = "LazyGit" },
+  { "<leader>tr", "<cmd>lua require('FTerm').scratch({cmd='git rebase -i'})<cr>", desc = "Rebase Interactive" },
+  { "<leader>ts", "<cmd>ToggleOneShotTerminal<cr>", desc = "One-shot Terminal" },
+  { "<leader>tt", "<cmd>lua require('FTerm').toggle()<cr>", desc = "Toggle Terminal" },
+
+  { "<leader>u", group = "Undo" },
+  { "<leader>ut", "<cmd>UndotreeToggle<cr>", desc = "Undo Tree" },
+    },
     },
   },
 

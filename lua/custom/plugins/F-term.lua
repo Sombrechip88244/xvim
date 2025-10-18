@@ -27,12 +27,5 @@ return {
     end, { bang = true })
 
     require('FTerm').setup {}
-    local wk = require 'which-key'
-    wk.register({
-      t = { '<cmd>lua require("FTerm").toggle()<cr>', 'Open Terminal' },
-      a = { '<cmd>ToggleOneShotTerminal<cr>', 'Toggle Terminal' },
-      v = { '<cmd>OpenLazyGit<cr>', 'Version Control (git)' },
-      i = { '<cmd>lua require("FTerm").scratch({cmd="git rebase -i"})<cr>', 'Rebase Interactive' },
-    }, { prefix = '<leader>' })
   end,
 }
