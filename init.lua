@@ -356,6 +356,13 @@ require('lazy').setup({
   { "<leader>ts", "<cmd>ToggleOneShotTerminal<cr>", desc = "One-shot Terminal" },
   { "<leader>tt", "<cmd>lua require('FTerm').toggle()<cr>", desc = "Toggle Terminal" },
 
+
+  { "<leader>p", group = "Timer" },
+  { "<leader>pt", "<cmd>TimerStart 10m<cr>", desc = "Timer 10m" },
+  { "<leader>pw", "<cmd>TimerStart 25m<cr>", desc = "Timer 25m" },
+  { "<leader>ph", "<cmd>TimerStart 60m<cr>", desc = "Timer 1hr" },
+
+
   { "<leader>u", group = "Undo" },
   { "<leader>ut", "<cmd>UndotreeToggle<cr>", desc = "Undo Tree" },
     },

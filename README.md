@@ -54,8 +54,7 @@ git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
 ```
 
 
-Then read our Getting Started guide to be walked through
-installing, configuring and maintaining Doom Emacs.
+
 
   
 
@@ -63,4 +62,5 @@ installing, configuring and maintaining Doom Emacs.
 Nvim is no journey of a mere thousand miles. You _will_ run into problems and
 mysterious errors. When you do, Just drop an issue and i will try to reply soon
 
+### It Works On My Machine 👍
 
