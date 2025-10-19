@@ -48,6 +48,13 @@ Its design is guided by these mantras:
 > additional dependencies.
 
 
+# Dependencies
+- Neomutt and its dependencies
+- Lazygit
+- Latest version of nvim
+
+
+
 # Install
 ``` sh
 git clone https://github.com/Sombrechip88244/xvim.git ~/.config/nvim/
