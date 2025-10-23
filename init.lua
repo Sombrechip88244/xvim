@@ -356,6 +356,9 @@ require('lazy').setup({
   { "<leader>ts", "<cmd>ToggleOneShotTerminal<cr>", desc = "One-shot Terminal" },
   { "<leader>tt", "<cmd>lua require('FTerm').toggle()<cr>", desc = "Toggle Terminal" },
 
+ { "<leader>g", "<cmd>lua require('FTerm').scratch({cmd='gemini'})<cr>", desc = "gemini-cli" },
+
+
 
   { "<leader>x", group = "Timer" },
   { "<leader>xt", "<cmd>TimerStart 10m<cr>", desc = "Timer 10m" },

@@ -25,7 +25,7 @@ return {
       dashboard.button('f', '󰍉  > Find file', ':cd ~/ | Telescope git_files<CR>'),
       dashboard.button('m', '  > Mail', '<cmd>lua require("FTerm").scratch({cmd="neomutt"})<CR>'),
       dashboard.button('a', '  > Terminal', "<cmd>lua require('FTerm').toggle()<CR>"),
-      dashboard.button('v', '  > Git', '<cmd>lua require("FTerm").scratch({cmd="lazygit"})<CR>'),
+      dashboard.button('g', '  > Gemini', '<cmd>lua require("FTerm").scratch({cmd="gemini"})<CR>'),
       dashboard.button('l', '󰒲  > Lazy (Package Manager)', '<cmd>Lazy<CR>'),
       dashboard.button('h', '󰋖  > Help', '<cmd>Telescope help_tags<cr>'),
       dashboard.button('t', '󰼭  > Typr (Typing Practise)', ':Typr<CR>'),
